@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 // Servir arquivos estáticos da pasta public
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Rota principal
+// Rota principal //
 app.get('/api', (req, res) => {
     res.json({ message: 'API funcionando!' });
 });
